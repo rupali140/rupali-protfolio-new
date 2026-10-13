@@ -1,0 +1,16 @@
+.about__content {
+  max-width: 760px;
+}
+
+.about__text {
+  color: var(--text-secondary);
+  font-size: 16.5px;
+  margin-top: 18px;
+}
+
+.about__text--muted {
+  color: var(--text-muted);
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 14px;
+}
