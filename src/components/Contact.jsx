@@ -76,9 +76,25 @@ export default function Contact({ reducedMotion }) {
         <div ref={headRevealRef} className="reveal">
           <span className="section-label">Contact</span>
           <h2 className="section-title">Let's talk about data.</h2>
-          <p className="section-lede">
-            Have a project in mind or just want to say hi? Send a message below.
+          <p className="section-lede" style={{ marginBottom: 0 }}>
+            Have a project in mind or just want to say hi? Send a message below, or reach me
+            directly.
           </p>
+          <ul className="contact-links">
+            <li>
+              <a href="mailto:jatrupali4@gmail.com">jatrupali4@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/rupali-jat-846b0b247" target="_blank" rel="noreferrer">
+                LinkedIn ↗
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/rupali140" target="_blank" rel="noreferrer">
+                GitHub ↗
+              </a>
+            </li>
+          </ul>
         </div>
 
         <form className="contact-form reveal" ref={formRevealRef} onSubmit={handleSubmit} noValidate>

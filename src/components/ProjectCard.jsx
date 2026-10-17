@@ -24,7 +24,7 @@ export default function ProjectCard({ project, index, reducedMotion }) {
     <article ref={revealRef} className="reveal reveal-stagger project-card" style={{ '--i': index }}>
       <div className="project-card__top">
         <span className="project-card__tag">{project.tag}</span>
-        <span className="project-card__sample">Sample content</span>
+        <span className="project-card__live">● Live</span>
       </div>
 
       <h3 className="project-card__title">{project.title}</h3>
@@ -46,8 +46,8 @@ export default function ProjectCard({ project, index, reducedMotion }) {
         ))}
       </ul>
 
-      <a href={project.link} className="project-card__link">
-        View project ↗
+      <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-card__link">
+        View live project ↗
       </a>
     </article>
   )

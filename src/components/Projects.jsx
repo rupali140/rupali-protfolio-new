@@ -12,9 +12,7 @@ export default function Projects({ reducedMotion }) {
         <div ref={revealRef} className="reveal">
           <span className="section-label">Featured Projects</span>
           <h2 className="section-title">A few things I've worked on.</h2>
-          <p className="section-lede">
-            Sample projects below — swap in your own work, links, and write-ups.
-          </p>
+          <p className="section-lede">Live projects — click through to try them.</p>
         </div>
 
         <div className="projects-grid">
