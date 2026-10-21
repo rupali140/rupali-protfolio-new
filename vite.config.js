@@ -3,12 +3,13 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // GitHub Pages serves this project from a sub-path
-  // (https://rupali140.github.io/rupali-protfolio-new/), not from the
-  // domain root, so Vite needs to know that when it builds asset URLs.
-  // Without this, index.html references /assets/... which 404s under the
-  // sub-path and the page loads blank.
-  base: '/rupali-protfolio-new/',
+  // IMPORTANT — set this to match your GitHub repo name exactly, with
+  // slashes on both ends, e.g. '/rupalijat-portfolio/'. GitHub Pages
+  // serves a project site from https://<user>.github.io/<repo-name>/, not
+  // from the domain root, so Vite needs the right sub-path when it builds
+  // asset URLs — otherwise index.html references /assets/... which 404s
+  // and the page loads blank (this bit an earlier portfolio build).
+  base: '/rupalijat-portfolio/',
   build: {
     outDir: 'docs',
   },
